@@ -37,3 +37,5 @@ vim.api.nvim_set_keymap('v', '<A-k>', ":m '<-2<CR>gv=gv", { noremap = true, sile
 for i = 1, 9 do
   vim.keymap.set('n', '<A-' .. i .. '>', i .. 'gt', { desc = 'Go to tab ' .. i })
 end
+
+vim.keymap.set('x', '<leader>p', '"_dP', { desc = 'Paste without losing the yank' })
